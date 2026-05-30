@@ -13,14 +13,13 @@ names: #matching indices to classes
   0:sunglasses
   1:hat
   2:jacket
-  3: shirt
-  4: pants
-  5: shorts
-  6: skirt
+  3:shirt
+  4:pants
+  5:shorts
+  6:skirt
   7:dress
   8:bag
   9:shoe
 
 
 
-#by 6:30, finish full comp ivs side, strat wokring on ml
