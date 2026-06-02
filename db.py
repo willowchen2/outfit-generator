@@ -1,4 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
+import cloudinary
+
 
 db = SQLAlchemy()
 
@@ -8,7 +10,7 @@ class Piece(db.Model):
     label = db.Column(db.String, nullable=False) #nulllable=false means that this every item needs to have a  label
     color = db.Column(db.String, nullable=True)
     image=db.Column(db.String, nullable=False)
-    
+
 
 
 
