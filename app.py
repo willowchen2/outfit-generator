@@ -12,7 +12,22 @@ db.init_app(app)
 with app.app_context():
     db.create_all()
 
+# Response helpers 
+def success_response(data, code=200):
+    return json.dumps({"success": True, "data": data}), code
+
+def failure_response(message, code=404):
+    return json.dumps({"success": False, "error": message}), code
+
 #routes
+#addImages()
+@app.route("/wardrobe/", methods=["POST"])
+def addImage():
+    pass
+
+#resetInventory()
+#removeImages()
+#getOutfit()
 
 
 
